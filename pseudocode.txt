@@ -1,0 +1,33 @@
+Program OrderMakananMinuman
+
+READ and WRITE total_harga with number
+READ and WRITE list_menu with array of string
+READ and WRITE list_harga with array of number
+READ and WRITE list_pesanan with array of number
+READ and WRITE pesan_lagi with boolean
+READ and WRITE pesan_lagi_input with string
+READ and WRITE pilihan with number
+
+STORE "total_harga" with 0
+STORE "pesan_lagi" with true
+
+WHILE "pesan_lagi" DO
+    PRINT "list_menu"
+    PRINT "list_harga"
+    
+    INPUT "pilihan"
+    CALL tambah_pesanan(pilihan)
+    STORE "total_harga" with "total_harga" + list_harga[pilihan]
+
+    INPUT "pesan_lagi_input"
+
+    IF "pesan_lagi_input" != "yes" THEN
+        STORE "pesan_lagi" with false
+    END IF
+
+END WHILE
+
+PRINT "list_menu"
+PRINT "list_pesanan"
+
+

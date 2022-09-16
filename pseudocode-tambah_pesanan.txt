@@ -1,0 +1,18 @@
+Sub Program tambah_pesanan(pilihan)
+
+READ and WRITE i with number
+READ and WRITE loop with boolean
+
+STORE i with 0
+STORE loop with true
+
+WHILE loop DO
+    IF "list_pesanan"[i] == null THEN
+        STORE "list_pesanan"[i] with "pilihan"
+        STORE "loop" with false
+    END IF
+
+    STORE "i" with "i" + 1
+END WHILE
+
+RETURN
