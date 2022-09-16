@@ -1,0 +1,12 @@
+aplikasi pemesanan makanan online :
+
+1. inisiasi total_harga = 0
+2. tampilkan menu ke user
+3. tampilkan list harga dari masing-masing menu
+4. user memasukan id makanan/minuman dari menu
+5. masukan id makanan yang dimasukan user tadi ke list pesanan user
+6. tambahkan total_harga dengan harga yang ada pada list harga dengan index sesuai dengan id yang dimasukan user
+7. apakah user ingin memesan makanan/minuman lain ?
+    - yes : kembali ke langkah 2
+    - no : lanjut ke langkah berikutnya
+8. tampilkan list pesanan dari user
