@@ -16,7 +16,7 @@ WHILE "pesan_lagi" DO
     PRINT "list_harga"
     
     INPUT "pilihan"
-    CALL sp_pesan_lagi(pilihan)
+    CALL tambah_pesanan(pilihan)
     STORE "total_harga" with "total_harga" + list_harga[pilihan]
 
     INPUT "pesan_lagi_input"
